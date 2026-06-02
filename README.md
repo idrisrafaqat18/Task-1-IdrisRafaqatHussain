@@ -1,21 +1,84 @@
-# Module 01: The Rule-Based AI Chatbot
-### DecodeLabs Industrial Training Kit | Batch: 2026
----
+# Rule-Based AI Chatbot
+
+A simple rule-based AI chatbot built with Python using deterministic logic and control flow patterns.
 
 ## 📌 Project Overview
-Project 1 forms the foundational track of the DecodeLabs Artificial Intelligence Engineering program[cite: 427, 429]. This phase focuses strictly on **Control Flow and Logic (System 2: The Engineer)** rather than probabilistic deep learning[cite: 431, 462]. 
 
-The goal is to master the precision of a deterministic logic engine by establishing a continuous digital loop that simulates basic human interaction through pure programmatic decision-making[cite: 433, 476]. Building this explicit `if-else` structural foundation acts as the essential control layer and deterministic guardrail used in production environments (such as NVIDIA NeMo and Llama Guard) to filter probabilistic outputs, eliminate hallucination risks, and ensure absolute safety and compliance[cite: 433, 482, 489, 494].
+This project demonstrates the foundational principles of artificial intelligence engineering through a **Rule-Based Chatbot** implementation. It focuses on:
+
+- **Control Flow and Logic**: Building a deterministic logic engine that simulates basic human interaction through programmatic decision-making
+- **Precision and Predictability**: Establishing a continuous digital loop that ensures 100% predictable and safe outcomes with complete traceability
 
 ## 🛠️ Key Requirements & Architecture
-The codebase adheres strictly to the **Input-Process-Output (IPO)** architecture model[cite: 498]:
-1. **Input (Raw Feed) & Sanitization:** Captures the raw user stream via `input()` and subjects it to a normalization process (`.lower().strip()`) to remove variations, case disparities, and whitespace padding before routing[cite: 501, 503, 533].
-2. **Process (The Logic Skeleton):** A rigid, hard-coded conditional routing matrix (`if-elif-else`) that matches clean user string sequences to predefined target intent structures[cite: 506, 507, 516].
-3. **Output (Feedback Loop):** Connects matched intents directly to precise, hard-coded string outputs to achieve 100% predictable, safe outcomes with zero mystery and absolute traceability[cite: 481, 512, 517].
-4. **Continuous Digital Loop:** Runs indefinitely within an active state machine loop until an explicit, universal exit command is issued[cite: 446, 449].
+
+The codebase adheres to the **Input-Process-Output (IPO)** architecture model:
+
+1. **Input (Raw Feed) & Sanitization**: Captures user input via `input()` and normalizes it using `.lower().strip()` to remove variations, case disparities, and whitespace inconsistencies
+
+2. **Process (The Logic Skeleton)**: A rigid, hard-coded conditional routing matrix (`if-elif-else`) that matches clean user strings to predefined intent structures
+
+3. **Output (Feedback Loop)**: Connects matched intents directly to precise, hard-coded string outputs to achieve predictable outcomes
+
+4. **Continuous Digital Loop**: Runs indefinitely within an active state machine loop until an explicit exit command is issued
 
 ## 🚀 Key Skills Mastered
-* Control flow & deterministic routing structures[cite: 450, 451].
-* Text normalization and input data data sanitization[cite: 450, 503].
-* Hard-coded application safety guardrails[cite: 489].
-* Designing clear, "White Box" explainable program pathways[cite: 478, 484].
+
+- Control flow and deterministic routing structures
+- Text normalization and input data sanitization
+- Hard-coded application safety guardrails
+- Designing clear, explainable program pathways ("White Box" transparency)
+
+## 💻 Getting Started
+
+### Prerequisites
+
+- Python 3.6 or higher
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/idrisrafaqat18/rule-based-ai-bot.git
+cd rule-based-ai-bot
+```
+
+2. Run the chatbot:
+```bash
+python main.py
+```
+
+## 📖 Usage
+
+Simply run the script and interact with the chatbot by typing your messages. The bot will process your input and respond based on predefined rules.
+
+Example:
+```
+You: Hello
+Bot: Hi there! How can I help you?
+
+You: What is your name?
+Bot: I'm a rule-based chatbot.
+
+You: exit
+Bot: Goodbye!
+```
+
+## 🔧 How It Works
+
+The chatbot uses a series of conditional statements to match user input patterns with predefined responses. Each input is:
+
+1. **Normalized** - converted to lowercase and stripped of whitespace
+2. **Matched** - checked against a set of predefined patterns
+3. **Responded** - with a corresponding hard-coded output
+
+## 📝 License
+
+This project is provided as-is for educational purposes.
+
+## 👤 Author
+
+**Idris Rafaqat**
+
+---
+
+*This is a foundational project demonstrating core AI principles through rule-based logic implementation.*
