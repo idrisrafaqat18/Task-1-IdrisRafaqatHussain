@@ -44,24 +44,42 @@ cd rule-based-ai-bot
 
 2. Run the chatbot:
 ```bash
-python main.py
+python bot.py
 ```
 
 ## 📖 Usage
 
 Simply run the script and interact with the chatbot by typing your messages. The bot will process your input and respond based on predefined rules.
 
-Example:
+### Example Conversation:
+
 ```
-You: Hello
-Bot: Hi there! How can I help you?
+--- DecodeLabs Logic Engine Active ---
+Type 'exit' or 'bye' to close the chatbot.
 
-You: What is your name?
-Bot: I'm a rule-based chatbot.
+You: hello
+Bot: Hello! How can I help you today?
+------------------------------
 
-You: exit
+You: how are you
+Bot: I am doing well, thank you! I am running on pure programmatic logic.
+------------------------------
+
+You: what is your name
+Bot: I am the DecodeLabs Rule-Based Chatbot.
+------------------------------
+
+You: bye
 Bot: Goodbye!
 ```
+
+### Supported Commands:
+
+- **Greetings**: "hello", "hi", "hey" → Bot responds with a greeting
+- **Status Check**: "how are you" → Bot responds with its status
+- **Identification**: "what is your name" → Bot introduces itself
+- **Exit**: "exit" or "bye" → Bot closes the session
+- **Unrecognized Input**: Any other input → Bot responds with "I'm sorry, I don't understand that command yet."
 
 ## 🔧 How It Works
 
